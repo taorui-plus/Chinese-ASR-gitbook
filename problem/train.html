@@ -1,0 +1,985 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10.2 训练过程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="deploy.html" />
+    
+    
+    <link rel="prev" href="model.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    桃子同学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../deepspeech-enhance/background.html">
+            
+                <a href="../deepspeech-enhance/background.html">
+            
+                    
+                    中文语音识别
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../deepspeech-enhance/diff.html">
+            
+                <a href="../deepspeech-enhance/diff.html">
+            
+                    
+                    在百度deepspeech 2 上的改进点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../deepspeech-enhance/testresult.html">
+            
+                <a href="../deepspeech-enhance/testresult.html">
+            
+                    
+                    测试结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../deepspeech-enhance/experience.html">
+            
+                <a href="../deepspeech-enhance/experience.html">
+            
+                    
+                    训练调参经验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../deepspeech-enhance/env.html">
+            
+                <a href="../deepspeech-enhance/env.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../framework/background.html">
+            
+                <a href="../framework/background.html">
+            
+                    
+                    一、深度学习框架选择
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../framework/keras.html">
+            
+                <a href="../framework/keras.html">
+            
+                    
+                    1.1 keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../framework/tensorflow.html">
+            
+                <a href="../framework/tensorflow.html">
+            
+                    
+                    1.2 tensorflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../framework/theano.html">
+            
+                <a href="../framework/theano.html">
+            
+                    
+                    1.3 theano
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../framework/kaldi.html">
+            
+                <a href="../framework/kaldi.html">
+            
+                    
+                    1.4 kaldi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../data/background.html">
+            
+                <a href="../data/background.html">
+            
+                    
+                    二、数据预处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../data/shouji.html">
+            
+                <a href="../data/shouji.html">
+            
+                    
+                    2.1 数据收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../data/过渡.html">
+            
+                <a href="../data/过渡.html">
+            
+                    
+                    2.2 数据过渡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../data/model.html">
+            
+                <a href="../data/model.html">
+            
+                    
+                    2.3 单独的降噪模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../data/jiazao.html">
+            
+                <a href="../data/jiazao.html">
+            
+                    
+                    2.4 训练数据加噪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../data/niuqu.html">
+            
+                <a href="../data/niuqu.html">
+            
+                    
+                    2.4 训练数据扭曲掩码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../feature/background.html">
+            
+                <a href="../feature/background.html">
+            
+                    
+                    三、特征提取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../feature/freqence.html">
+            
+                <a href="../feature/freqence.html">
+            
+                    
+                    3.1 频谱图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../feature/mfcc.html">
+            
+                <a href="../feature/mfcc.html">
+            
+                    
+                    3.2 mfcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../feature/mel.html">
+            
+                <a href="../feature/mel.html">
+            
+                    
+                    3.3 梅尔倒谱系数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../feature/vector.html">
+            
+                <a href="../feature/vector.html">
+            
+                    
+                    3.4 i-vector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Acoustic/background.html">
+            
+                <a href="../Acoustic/background.html">
+            
+                    
+                    四、声学模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Acoustic/1400.html">
+            
+                <a href="../Acoustic/1400.html">
+            
+                    
+                    4.1 映射1400个带声调拼音
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Acoustic/410.html">
+            
+                <a href="../Acoustic/410.html">
+            
+                    
+                    4.2 映射410个不带声调拼音
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Acoustic/5000.html">
+            
+                <a href="../Acoustic/5000.html">
+            
+                    
+                    4.3 直接映射5000个汉字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Acoustic/32.html">
+            
+                <a href="../Acoustic/32.html">
+            
+                    
+                    4.4 直接映射32个音素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../fusion/background.html">
+            
+                <a href="../fusion/background.html">
+            
+                    
+                    五、语言模型融合方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../fusion/after.html">
+            
+                <a href="../fusion/after.html">
+            
+                    
+                    5.1 解码后语言模型重打分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../fusion/process.html">
+            
+                <a href="../fusion/process.html">
+            
+                    
+                    5.2 解码过程中语言模型重打分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../fusion/joint.html">
+            
+                <a href="../fusion/joint.html">
+            
+                    
+                    5.3 声学模型和语言模型联合训练
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../decoding/background.html">
+            
+                <a href="../decoding/background.html">
+            
+                    
+                    六、解码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../decoding/greedy.html">
+            
+                <a href="../decoding/greedy.html">
+            
+                    
+                    6.1 贪婪搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../decoding/beamsearch.html">
+            
+                <a href="../decoding/beamsearch.html">
+            
+                    
+                    6.2 beam search 集束搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../language/background.html">
+            
+                <a href="../language/background.html">
+            
+                    
+                    七、语言模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../language/n-gram.html">
+            
+                <a href="../language/n-gram.html">
+            
+                    
+                    7.1 基于统计的n-gram语言模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../language/rnn.html">
+            
+                <a href="../language/rnn.html">
+            
+                    
+                    7.2 基于rnn的语言模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../language/bert.html">
+            
+                <a href="../language/bert.html">
+            
+                    
+                    7.3 基于bert的语言模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Evaluation/background.html">
+            
+                <a href="../Evaluation/background.html">
+            
+                    
+                    八、评价指标
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Evaluation/word.html">
+            
+                <a href="../Evaluation/word.html">
+            
+                    
+                    8.1 字错率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Evaluation/sentence.html">
+            
+                <a href="../Evaluation/sentence.html">
+            
+                    
+                    8.2 句错率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Evaluation/recall.html">
+            
+                <a href="../Evaluation/recall.html">
+            
+                    
+                    8.3 业务关键词的召回率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Evaluation/time.html">
+            
+                <a href="../Evaluation/time.html">
+            
+                    
+                    8.4 响应时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Evaluation/throughput.html">
+            
+                <a href="../Evaluation/throughput.html">
+            
+                    
+                    8.5 吞吐量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../deploy/background.html">
+            
+                <a href="../deploy/background.html">
+            
+                    
+                    九、模型部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../deploy/djangp.html">
+            
+                <a href="../deploy/djangp.html">
+            
+                    
+                    9.1 Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../deploy/flask.html">
+            
+                <a href="../deploy/flask.html">
+            
+                    
+                    9.2 flask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../deploy/tornado.html">
+            
+                <a href="../deploy/tornado.html">
+            
+                    
+                    9.3 tornado
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../deploy/serving.html">
+            
+                <a href="../deploy/serving.html">
+            
+                    
+                    9.4 tf serving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../deploy/lite.html">
+            
+                <a href="../deploy/lite.html">
+            
+                    
+                    9.5 tf lite
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="background.html">
+            
+                <a href="background.html">
+            
+                    
+                    十、常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="model.html">
+            
+                <a href="model.html">
+            
+                    
+                    10.1 模型搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12.2" data-path="train.html">
+            
+                <a href="train.html">
+            
+                    
+                    10.2 训练过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="deploy.html">
+            
+                <a href="deploy.html">
+            
+                    
+                    10.3 部署过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >10.2 训练过程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="102-&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;">10.2 &#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="model.html" class="navigation navigation-prev " aria-label="Previous page: 10.1 模型搭建">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="deploy.html" class="navigation navigation-next " aria-label="Next page: 10.3 部署过程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10.2 训练过程","level":"1.12.2","depth":2,"next":{"title":"10.3 部署过程","level":"1.12.3","depth":2,"path":"problem/deploy.md","ref":"problem/deploy.md","articles":[]},"previous":{"title":"10.1 模型搭建","level":"1.12.1","depth":2,"path":"problem/model.md","ref":"problem/model.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"problem/train.md","mtime":"2020-01-16T07:07:10.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-16T07:22:03.636Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

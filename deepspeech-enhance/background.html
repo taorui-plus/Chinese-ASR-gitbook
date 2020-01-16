@@ -1,0 +1,1046 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>中文语音识别 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="diff.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    桃子同学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="background.html">
+            
+                <a href="background.html">
+            
+                    
+                    中文语音识别
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="diff.html">
+            
+                <a href="diff.html">
+            
+                    
+                    在百度deepspeech 2 上的改进点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="testresult.html">
+            
+                <a href="testresult.html">
+            
+                    
+                    测试结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="experience.html">
+            
+                <a href="experience.html">
+            
+                    
+                    训练调参经验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="env.html">
+            
+                <a href="env.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../framework/background.html">
+            
+                <a href="../framework/background.html">
+            
+                    
+                    一、深度学习框架选择
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../framework/keras.html">
+            
+                <a href="../framework/keras.html">
+            
+                    
+                    1.1 keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../framework/tensorflow.html">
+            
+                <a href="../framework/tensorflow.html">
+            
+                    
+                    1.2 tensorflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../framework/theano.html">
+            
+                <a href="../framework/theano.html">
+            
+                    
+                    1.3 theano
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../framework/kaldi.html">
+            
+                <a href="../framework/kaldi.html">
+            
+                    
+                    1.4 kaldi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../data/background.html">
+            
+                <a href="../data/background.html">
+            
+                    
+                    二、数据预处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../data/shouji.html">
+            
+                <a href="../data/shouji.html">
+            
+                    
+                    2.1 数据收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../data/过渡.html">
+            
+                <a href="../data/过渡.html">
+            
+                    
+                    2.2 数据过渡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../data/model.html">
+            
+                <a href="../data/model.html">
+            
+                    
+                    2.3 单独的降噪模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../data/jiazao.html">
+            
+                <a href="../data/jiazao.html">
+            
+                    
+                    2.4 训练数据加噪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../data/niuqu.html">
+            
+                <a href="../data/niuqu.html">
+            
+                    
+                    2.4 训练数据扭曲掩码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../feature/background.html">
+            
+                <a href="../feature/background.html">
+            
+                    
+                    三、特征提取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../feature/freqence.html">
+            
+                <a href="../feature/freqence.html">
+            
+                    
+                    3.1 频谱图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../feature/mfcc.html">
+            
+                <a href="../feature/mfcc.html">
+            
+                    
+                    3.2 mfcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../feature/mel.html">
+            
+                <a href="../feature/mel.html">
+            
+                    
+                    3.3 梅尔倒谱系数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../feature/vector.html">
+            
+                <a href="../feature/vector.html">
+            
+                    
+                    3.4 i-vector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Acoustic/background.html">
+            
+                <a href="../Acoustic/background.html">
+            
+                    
+                    四、声学模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Acoustic/1400.html">
+            
+                <a href="../Acoustic/1400.html">
+            
+                    
+                    4.1 映射1400个带声调拼音
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Acoustic/410.html">
+            
+                <a href="../Acoustic/410.html">
+            
+                    
+                    4.2 映射410个不带声调拼音
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Acoustic/5000.html">
+            
+                <a href="../Acoustic/5000.html">
+            
+                    
+                    4.3 直接映射5000个汉字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Acoustic/32.html">
+            
+                <a href="../Acoustic/32.html">
+            
+                    
+                    4.4 直接映射32个音素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../fusion/background.html">
+            
+                <a href="../fusion/background.html">
+            
+                    
+                    五、语言模型融合方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../fusion/after.html">
+            
+                <a href="../fusion/after.html">
+            
+                    
+                    5.1 解码后语言模型重打分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../fusion/process.html">
+            
+                <a href="../fusion/process.html">
+            
+                    
+                    5.2 解码过程中语言模型重打分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../fusion/joint.html">
+            
+                <a href="../fusion/joint.html">
+            
+                    
+                    5.3 声学模型和语言模型联合训练
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../decoding/background.html">
+            
+                <a href="../decoding/background.html">
+            
+                    
+                    六、解码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../decoding/greedy.html">
+            
+                <a href="../decoding/greedy.html">
+            
+                    
+                    6.1 贪婪搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../decoding/beamsearch.html">
+            
+                <a href="../decoding/beamsearch.html">
+            
+                    
+                    6.2 beam search 集束搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../language/background.html">
+            
+                <a href="../language/background.html">
+            
+                    
+                    七、语言模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../language/n-gram.html">
+            
+                <a href="../language/n-gram.html">
+            
+                    
+                    7.1 基于统计的n-gram语言模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../language/rnn.html">
+            
+                <a href="../language/rnn.html">
+            
+                    
+                    7.2 基于rnn的语言模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../language/bert.html">
+            
+                <a href="../language/bert.html">
+            
+                    
+                    7.3 基于bert的语言模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Evaluation/background.html">
+            
+                <a href="../Evaluation/background.html">
+            
+                    
+                    八、评价指标
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Evaluation/word.html">
+            
+                <a href="../Evaluation/word.html">
+            
+                    
+                    8.1 字错率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Evaluation/sentence.html">
+            
+                <a href="../Evaluation/sentence.html">
+            
+                    
+                    8.2 句错率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Evaluation/recall.html">
+            
+                <a href="../Evaluation/recall.html">
+            
+                    
+                    8.3 业务关键词的召回率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Evaluation/time.html">
+            
+                <a href="../Evaluation/time.html">
+            
+                    
+                    8.4 响应时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Evaluation/throughput.html">
+            
+                <a href="../Evaluation/throughput.html">
+            
+                    
+                    8.5 吞吐量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../deploy/background.html">
+            
+                <a href="../deploy/background.html">
+            
+                    
+                    九、模型部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../deploy/djangp.html">
+            
+                <a href="../deploy/djangp.html">
+            
+                    
+                    9.1 Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../deploy/flask.html">
+            
+                <a href="../deploy/flask.html">
+            
+                    
+                    9.2 flask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../deploy/tornado.html">
+            
+                <a href="../deploy/tornado.html">
+            
+                    
+                    9.3 tornado
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../deploy/serving.html">
+            
+                <a href="../deploy/serving.html">
+            
+                    
+                    9.4 tf serving
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../deploy/lite.html">
+            
+                <a href="../deploy/lite.html">
+            
+                    
+                    9.5 tf lite
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../problem/background.html">
+            
+                <a href="../problem/background.html">
+            
+                    
+                    十、常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../problem/model.html">
+            
+                <a href="../problem/model.html">
+            
+                    
+                    10.1 模型搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../problem/train.html">
+            
+                <a href="../problem/train.html">
+            
+                    
+                    10.2 训练过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../problem/deploy.html">
+            
+                <a href="../problem/deploy.html">
+            
+                    
+                    10.3 部署过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >中文语音识别</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E2D;&#x6587;&#x8BED;&#x97F3;&#x8BC6;&#x522B;">&#x4E2D;&#x6587;&#x8BED;&#x97F3;&#x8BC6;&#x522B;</h1>
+<h2 id="&#x9879;&#x76EE;&#x80CC;&#x666F;">&#x9879;&#x76EE;&#x80CC;&#x666F;</h2>
+<p>&#x8FD9;&#x662F;&#x6211;&#x8C03;&#x6574;&#x4E86;&#x6574;&#x6574;&#x4E00;&#x5E74;&#x540E;&#x843D;&#x5730;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x6548;&#x679C;&#x80FD;&#x548C;&#x79D1;&#x5927;&#x8BAF;&#x98DE;&#x5AB2;&#x7F8E;&#xFF0C;&#x4E0D;&#x5982;&#x8BAF;&#x98DE;&#x7684;&#x70B9;&#x662F;&#x8BC6;&#x522B;&#x7ED3;&#x679C;&#x4E2D;&#x6CA1;&#x6709;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#xFF0C;&#x5728;&#x7279;&#x5B9A;&#x9886;&#x57DF;&#x51C6;&#x786E;&#x7387;&#x6781;&#x9AD8;&#x3002;</p>
+<p>&#x56FD;&#x5185;&#x4E2D;&#x6587;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x76F8;&#x5173;&#x7684;&#x6709;&#x7528;&#x8D44;&#x6599;&#x5F88;&#x5C11;&#xFF0C;&#x6280;&#x672F;&#x76F8;&#x5BF9;&#x5C01;&#x95ED;&#xFF0C;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x4E2D;&#x80FD;&#x627E;&#x5230;&#x7684;&#x65B9;&#x6CD5;&#x57FA;&#x672C;&#x4E0A;&#x90FD;&#x662F;10&#x5E74;&#x524D;&#x7684;&#x4F20;&#x7EDF;&#x65B9;&#x6CD5;&#xFF0C;&#x65E9;&#x5DF2;&#x8FC7;&#x65F6;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#x8E29;&#x4E86;&#x5F88;&#x591A;&#x5751;&#xFF08;&#x5F00;&#x59CB;&#x4E24;&#x4E2A;&#x6708;&#x5C1D;&#x8BD5;&#x5148;&#x8F6C;&#x62FC;&#x97F3;&#x518D;&#x8F6C;&#x6587;&#x5B57;&#xFF0C;fail&#xFF09;&#xFF0C;&#x8BF7;&#x6559;&#x4E86;&#x5F88;&#x591A;&#x4EBA;&#xFF0C;&#x5F88;&#x591A;&#x4E2A;&#x591C;&#x665A;&#x7761;&#x4E0D;&#x7740;&#x89C9;&#xFF0C;&#x60F3;&#x5C3D;&#x4E00;&#x5207;&#x529E;&#x6CD5;&#x79EF;&#x7D2F;&#x6570;&#x636E;&#xFF0C;&#x6709;&#x5F88;&#x591A;&#x6B21;&#x4F1A;
+&#x60F3;&#x653E;&#x5F03;&#xFF0C;&#x6301;&#x7EED;&#x4E13;&#x6CE8;&#x7684;&#x505A;&#x4E86;&#x4E00;&#x5E74;&#xFF0C;&#x6700;&#x7EC8;&#x5448;&#x73B0;&#x4E00;&#x4E2A;&#x6548;&#x679C;&#x8FD8;&#x4E0D;&#x9519;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x5F88;&#x8D5E;&#x540C;&#x5B63;&#x9038;&#x8D85;&#x7684;&#x89C2;&#x70B9;&#xFF0C;&#x4E92;&#x8054;&#x7F51;&#x9886;&#x57DF;&#x7684;idea&#x4E0D;&#x503C;&#x94B1;&#xFF0C;&#x5B9E;&#x73B0;&#x4E5F;&#x4E0D;&#x503C;&#x94B1;&#xFF0C;&#x503C;&#x94B1;&#x7684;&#x662F;&#x201C;<strong>&#x7ECF;&#x8FC7;&#x6C89;&#x6DC0;&#x7684;idea + &#x53CD;&#x590D;&#x63A8;&#x6572;&#x5730;&#x6267;&#x884C;</strong>&#x201D;</p>
+<p><a href="https://blog.csdn.net/qq_30262201/category_9398117.html" target="_blank">&#x76F8;&#x5173;&#x535A;&#x5BA2;&#xFF0C;&#x70B9;&#x6211;</a></p>
+<hr>
+<h2 id="&#x8D21;&#x732E;&#x8005;&#x540D;&#x5355;">&#x8D21;&#x732E;&#x8005;&#x540D;&#x5355;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x59D3;&#x540D;</th>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x4E3B;&#x8981;&#x8D21;&#x732E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x9676;&#x745E;</td>
+<td>&#x9879;&#x76EE;&#x8D1F;&#x8D23;&#x4EBA;</td>
+<td>&#x58F0;&#x5B66;&#x6A21;&#x578B;&#x8C03;&#x6574;&#x3001;&#x58F0;&#x5B66;&#x6A21;&#x578B;&#x6570;&#x636E;&#x6536;&#x96C6;&#x548C;&#x8C03;&#x6574;&#xFF0C;&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x53CA;&#x6574;&#x4F53;&#x6280;&#x672F;&#x9009;&#x578B;</td>
+</tr>
+<tr>
+<td>&#x76DB;&#x957F;&#x971E;</td>
+<td>&#x56E2;&#x961F;&#x6210;&#x5458;</td>
+<td>&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x8C03;&#x6574;&#x3001;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x6570;&#x636E;&#x6536;&#x96C6;&#x548C;&#x8C03;&#x6574;&#x3001;&#x8BED;&#x97F3;&#x7AEF;&#x70B9;&#x68C0;&#x6D4B;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x3001;mozilla&#x5DE5;&#x7A0B;&#x68B3;&#x7406;</td>
+</tr>
+<tr>
+<td>&#x5218;&#x5C27;</td>
+<td>&#x56E2;&#x961F;&#x6210;&#x5458;</td>
+<td>&#x5DE5;&#x7A0B;&#x8FD0;&#x7EF4;&#x3001;&#x6570;&#x636E;&#x6536;&#x96C6;</td>
+</tr>
+<tr>
+<td>&#x848B;&#x5FD7;&#x5B87;</td>
+<td>&#x56E2;&#x961F;&#x6210;&#x5458;</td>
+<td>&#x670D;&#x52A1;&#x90E8;&#x7F72;</td>
+</tr>
+<tr>
+<td>&#x8881;&#x6587;&#x6770;</td>
+<td>&#x5916;&#x63F4;</td>
+<td>&#x534F;&#x52A9;</td>
+</tr>
+<tr>
+<td>&#x8D75;&#x82E5;&#x742A;</td>
+<td>&#x56E2;&#x961F;&#x6210;&#x5458;</td>
+<td>&#x53C2;&#x4E0E;deepspeech2&#x68B3;&#x7406;</td>
+</tr>
+<tr>
+<td>&#x5F20;&#x745E;&#x96C4;</td>
+<td>&#x5916;&#x63F4;</td>
+<td>&#x7B54;&#x7591;&#x89E3;&#x60D1;</td>
+</tr>
+<tr>
+<td>&#x67E0;&#x6AAC;&#x535A;&#x4E3B;</td>
+<td>&#x5916;&#x63F4;</td>
+<td>&#x7B54;&#x7591;&#x89E3;&#x60D1;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5176;&#x4ED6;&#x5E2E;&#x6211;&#x7B54;&#x7591;&#x7684;&#x540C;&#x5B66;&#x6682;&#x65F6;&#x60F3;&#x4E0D;&#x8D77;&#x6765;&#xFF0C;&#x60F3;&#x8D77;&#x6765;&#x518D;&#x8865;&#x5145;&#xFF0C;&#x8FD9;&#x91CC;&#x518D;&#x6B21;&#x611F;&#x8C22;&#x4EE5;&#x4E0A;&#x540C;&#x5B66;&#x5BF9;&#x8BE5;&#x9879;&#x76EE;&#x7684;&#x8D21;&#x732E;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 桃子同学">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="diff.html" class="navigation navigation-next " aria-label="Next page: 在百度deepspeech 2 上的改进点">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"中文语音识别","level":"1.2","depth":1,"next":{"title":"在百度deepspeech 2 上的改进点","level":"1.2.1","depth":2,"path":"deepspeech-enhance/diff.md","ref":"deepspeech-enhance/diff.md","articles":[]},"previous":{"title":"桃子同学","level":"1.1","depth":1,"path":"README.md","ref":"./README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"deepspeech-enhance/background.md","mtime":"2020-01-16T07:17:54.254Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-16T07:22:03.636Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
